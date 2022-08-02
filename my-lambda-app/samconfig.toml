@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "my-hello-world-lambda"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-18dthcpjrkij5"
+s3_prefix = "my-hello-world-lambda"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=476826257128.dkr.ecr.us-east-1.amazonaws.com/myhelloworldlambda2d41fd69/helloworldfunction19d43fc4repo"]
